@@ -24,7 +24,7 @@ jobs:
 
             - name: run test case
               run: |
-                 export PYTHONPATH=$PYTHONPATH:.
+                 export PYTHONPATH=$PYTHONPATH:.github/workflows
                  pytest --cov=calc --cov-report=term
             
 
