@@ -1,4 +1,5 @@
 import pytest
+import calc
 # tests/test_calc.py
 from calc import add
 
