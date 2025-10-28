@@ -22,11 +22,11 @@ jobs:
             - name: install dependencies
               run: pip install -r .github/workflows/requirements.txt
 
-            - name: run test case
+            - name: Run tests with coverage
               run: |
-                 export PYTHONPATH=$PYTHONPATH:.github/workflows
+                 export PYTHONPATH=$PYTHONPATH:.
                  pytest --cov=calc --cov-report=term
-            
+
 
     deploy-job:
         runs-on: ubuntu-latest
