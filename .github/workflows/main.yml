@@ -23,7 +23,7 @@ jobs:
               run: pip install -r .github/workflows/requirements.txt
 
             - name: run test case
-              run: 
+              run: |
                  export PYTHONPATH=$PYTHONPATH:.github/workflows
                  pytest --cov=calc --cov-report=term
             
